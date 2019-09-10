@@ -13,7 +13,29 @@ progressione aritmetica di ragione D).
 
 int main()
 {
+	int a, d, n;
 	
+	cout << "Inserire due numeri: " << endl;
+	cout << "A: ";
+	cin >> a;
+	cout << endl << "D: ";
+	cin >> d;
+	
+	do
+	{
+		cout << "Inserire un valore numerico: ";
+		cin >> n;
+	}while(n <= 0);
+	
+	int somma = a + d;
+	
+	cout << "Successione: \n";
+	
+	for(int i = 0; i < n; i++)
+	{
+		cout << somma << endl;
+		somma += d;
+	}
 	
 	system("pause");
 	return 0;

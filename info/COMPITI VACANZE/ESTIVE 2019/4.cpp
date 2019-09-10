@@ -20,12 +20,21 @@ int main()
 	cout << endl << "B: ";
 	cin >> b;
 	
-	int x = b/a;
-	
-	if()
-	
+	if(a == 0 && b != 0)
+	{
+		cout << endl << "Equazione Impossibile." << endl << endl ;
+	}
+	else if(a == 0 && b == 0)
+	{
+		cout << endl << "Equazione indeterminata. " << endl << endl ;
+	}
+	else
+	{	
+		cout << endl << "x = " << b/a << endl << endl ;
+	}
 	
 	system("pause");
 	return 0;
 }
+
 
